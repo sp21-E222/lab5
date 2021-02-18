@@ -1,0 +1,73 @@
+swagger: "2.0"
+info: 
+  version: "0.0.1"
+  title: "cpuinfo"
+  description: "A simple service to get cpuinfo as an example of using swagger-2.0 specification and codegen"
+  termsOfService: "http://swagger.io/terms/"
+  contact: 
+    name: "Cloudmesh REST Service Example"
+  license: 
+    name: "Apache"
+host: "localhost:8080"
+basePath: "/engr-222"
+schemes: 
+  - "http"
+consumes: 
+  - "application/json"
+produces: 
+  - "application/json"
+paths: 
+  /cpu:
+    get:
+      tags:
+        - CPU
+      operationId: os_pack.cpu.get_processor_name
+      description: "Returns cpu information of the hosting server"
+      produces: 
+        - "application/json"
+      responses: 
+        "200":
+          description: "CPU info, or add more text"
+          schema: 
+            $ref: "#/definitions/CPU"
+  /sum/<arg1>/<arg2>:
+    get:
+      tags:
+        - SUM
+      operationId: os_pack.sum.sum
+      description: "Returns cpu information of the hosting server"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "CPU info, or add more text"
+          schema:
+            $ref: "#/definitions/CPU"
+  /os:
+    get:
+      tags:
+        - OS
+      operationId: os_pack.cpu_2020.get_os
+      description: "Returns os information of the hosting server"
+      produces: 
+        - "application/json"
+      responses: 
+        "200":
+          description: "os info, or add more text"
+          schema: 
+            $ref: "#/definitions/OS"
+definitions:
+  CPU:
+    type: "object"
+    required: 
+      - "model"
+    properties: 
+      model:
+        type: "string"
+  OS:
+    type: "object"
+    required: 
+      - "model"
+    properties: 
+      model:
+        type: "string"
