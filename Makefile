@@ -13,11 +13,7 @@ docker-build:
 
 docker-start:
 	@echo "starting the NEW service in container..."
-<<<<<<< HEAD
-	docker run -p 8080:8080 tbalson/cpu
-=======
 	docker run  -p 8080:8080 tbalson/cpu
->>>>>>> e1e7cd3ae68b33f59fb06c66b1b40253fc345baf
 
 service:
 	@echo "creating the service..."
