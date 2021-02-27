@@ -1,6 +1,6 @@
-# Lab 5
+# Lab 5 : REST API spec file
 
-Last week we created a github account and should know how to clone, add, commit and push files to your own repositories. You were also introduced to a .yaml file, this week we will create a swaggerhub account [swagger hub](https://app.swaggerhub.com/signup?channel=directWithinApp). This will provide a nice place to create our template for the yaml file/files we will use the rest of the semester.
+Last week we created a github account. You should know how to clone, add, commit and push files to your own repositories. You were also introduced to a .yaml file, the specification file for defining a REST API.  This week we will create a swaggerhub account [swagger hub](https://app.swaggerhub.com/signup?channel=directWithinApp). A swaggerhub account provides a nice place to create our template for the yaml file/files that we will use the rest of the semester.
 
 # Goal 
 
