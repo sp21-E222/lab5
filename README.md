@@ -1,25 +1,17 @@
-# learning OAS specification with cpu and os example
-This weeks lab you will be learning how to propelry use Open API specification or (OAS) from here on out. Following this specification will allow us to create a directory hierarchy of python files or modules that we can reference within a yaml file. This makes our applications super clean and readily transferable. 
+# Lab 5
 
-# Read about OAS 
+Last week we created a github account and should know how to clone, add, commit and push files to your own repositories. You were also introduced to a .yaml file, this week we will create a swaggerhub account [swagger hub](https://app.swaggerhub.com/signup?channel=directWithinApp). This will provide a nice place to create our template for the yaml file/files we will use the rest of the semester.
 
-You are required to read about writing OAS definitions and the required reading can be found here:
+# Goal 
 
-[Defining OAS 3.0](https://swagger.io/docs/specification/basic-structure/)
+1) convert a yaml file it OAS2 to OAS3 from within swagger hub. 
 
-[Defining OAS 2.0](https://swagger.io/docs/specification/2-0/basic-structure/)
+2) Use the service from lab 4 with the updated .yaml file. (changes need to be made to server.py)
 
-This documentation walks you through the basics of your YAML file, we will be using YAML exculsively in this class, however if you want to use JSON for your project feel free. 
+3) Create a python defintion that takes two arguments 
 
-# connexion
+4) map the python function to a dynamic endpoint. 
 
-To conform to OAS standards we will be using connexion to handle the HTTP requests. The documentation is found here:
-
-[connexion docs](https://connexion.readthedocs.io/en/latest/)
-
-# goal 
-
-The outcome of this lab is for you to begin to understand how to write your own yaml files. I have provided for you a nice start. 
 
 # start
 
@@ -27,12 +19,6 @@ The outcome of this lab is for you to begin to understand how to write your own 
 
 now remember in order to stop the service use `make docker-stop` in a seperate terminal. This should work seamless. 
 
-Look in os_pack there are two files. Looks at them. Redfine the operationid in the yaml file to point to the cpu_2020.py file. I have already created the def for the OS portion so the lab activity will be easy. 
+Look in os_pack there are two files. Looks at them. Redfine the operationid in the yaml file to point to the cpu_2020.py file. Add you python defintion to this location.
 
-# what you need to do for the lab activity
 
-create a new endpoint that tells the user what OS they are running by defining a path and operationid in the yaml file.
-
-# homework 
-
-I will post on piazza but the links in this document must be read. 
