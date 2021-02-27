@@ -13,7 +13,7 @@ Last week we created a github account. You should now know how to clone, add, co
 4) Map the python function to a dynamic endpoint. 
 
 
-# start
+# Start
 
 `make docker-all`
 
